@@ -12,7 +12,7 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #F8F9FA;
+            background-color: #FDEFF6;
         }
         .chart-container {
             position: relative;
@@ -29,46 +29,52 @@
             }
         }
         .gradient-text {
-            background: linear-gradient(90deg, #118AB2, #06D6A0);
+            background: linear-gradient(90deg, #D72660, #7F53AC);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: transparent;
         }
         .kpi-card {
-            background-color: #ffffff;
+            background-color: #fff0fa;
             border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 15px -3px rgba(215, 38, 96, 0.08), 0 4px 6px -2px rgba(127, 83, 172, 0.08);
             padding: 1.5rem;
             text-align: center;
-            border-left: 5px solid #FFD166;
+            border-left: 5px solid #D72660;
         }
         .flowchart-step {
-            background-color: white;
-            border: 2px solid #118AB2;
-            color: #073B4C;
+            background-color: #fff0fa;
+            border: 2px solid #7F53AC;
+            color: #D72660;
             padding: 1rem;
             border-radius: 0.5rem;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(127,83,172,0.12);
             flex-grow: 1;
         }
         .flowchart-arrow {
             font-size: 2rem;
-            color: #FFD166;
+            color: #D72660;
             align-self: center;
             margin: 0 1rem;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-pink-50 text-pink-900">
 
-    <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="flex justify-center mt-8 mb-2">
+        <img src="img/logo.png" alt="아라미디어 로고" class="max-w-xs w-full h-auto" />
+    </div>
+
+    <header class="bg-gradient-to-r from-pink-400 via-pink-500 to-purple-500 shadow-md sticky top-0 z-10">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-[#073B4C]">아라미디어 사회적협동조합</h1>
+            <h1 class="text-2xl font-bold text-white drop-shadow">아라미디어 사회적협동조합</h1>
             <nav class="hidden md:flex space-x-8">
-                <a href="#mission" class="text-gray-600 hover:text-[#118AB2]">미션</a>
-                <a href="#market" class="text-gray-600 hover:text-[#118AB2]">시장 분석</a>
-                <a href="#strategy" class="text-gray-600 hover:text-[#118AB2]">성장 전략</a>
-                <a href="#impact" class="text-gray-600 hover:text-[#118AB2]">기대 효과</a>
+                <a href="#mission" class="text-white hover:text-purple-200">미션</a>
+                <a href="#market" class="text-white hover:text-purple-200">시장 분석</a>
+                <a href="#strategy" class="text-white hover:text-purple-200">성장 전략</a>
+                <a href="#impact" class="text-white hover:text-purple-200">기대 효과</a>
             </nav>
         </div>
     </header>
@@ -187,7 +193,7 @@
         </section>
     </main>
 
-    <footer class="bg-[#073B4C] text-white mt-16">
+    <footer class="bg-gradient-to-r from-pink-400 via-pink-500 to-purple-500 text-white mt-16">
         <div class="container mx-auto px-6 py-8 text-center">
             <p class="text-2xl font-bold">아라미디어 사회적협동조합</p>
             <p class="mt-2">경기도 광명시 오리로 362, 1층 (창업지원센터)</p>
@@ -258,7 +264,7 @@
                 datasets: [{
                     label: '디지털 전환 장벽',
                     data: [45, 30, 20, 5],
-                    backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0', '#118AB2'],
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292', '#F06292'],
                     borderColor: '#ffffff',
                     borderWidth: 2
                 }]
@@ -274,15 +280,15 @@
                 datasets: [{
                     label: '전문성',
                     data: [6, 9, 8],
-                    backgroundColor: '#118AB2',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }, {
                     label: '비용 효율성',
                     data: [9, 4, 9],
-                    backgroundColor: '#06D6A0',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }, {
                     label: '지역 밀착성',
                     data: [7, 3, 10],
-                    backgroundColor: '#FFD166',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }]
             },
             options: {
@@ -307,15 +313,15 @@
                 datasets: [{
                     label: '정부 지원 바우처 사업',
                     data: [60, 50, 40],
-                    backgroundColor: '#118AB2',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }, {
                     label: '교육 및 컨설팅',
                     data: [30, 35, 35],
-                    backgroundColor: '#06D6A0',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }, {
                     label: '종합 마케팅 대행 (리테이너)',
                     data: [10, 15, 25],
-                    backgroundColor: '#FFD166',
+                    backgroundColor: ['#BDBDBD', '#F06292', '#F06292'],
                 }]
             },
             options: {
